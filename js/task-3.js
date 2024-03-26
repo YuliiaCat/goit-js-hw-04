@@ -9,11 +9,11 @@ const profile = {
   },
 
   updatePlayTime(hours) {
-    const amount = this.playTime + hours;
+    this.playTime += hours;
   },
 
   getInfo() {
-    return `${this.username} has ${amount} active hours!`;
+    return `${this.username} has ${this.playTime} active hours!`;
   },
 };
 
